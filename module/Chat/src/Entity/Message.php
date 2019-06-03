@@ -64,7 +64,7 @@ class Message
         return [
             'id' => $this->getId(),
             'text' => $this->getText(),
-            'datetime' => $this->getDatetime()->format(\DateTime::ATOM),
+            'datetime' => $this->getDatetime()->format("Y-m-d h:i:s"),
         ];
     }
 }
